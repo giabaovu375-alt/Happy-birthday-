@@ -16,7 +16,9 @@ body {
   text-align: center;
   visibility: hidden;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   padding: 0 20px;
   box-sizing: border-box;
 }
@@ -237,8 +239,11 @@ body {
 }
 
 .nine {
-  padding: 0 25px;
+  padding: 0 25px 40px;
   box-sizing: border-box;
+  position: absolute;
+  top: 20vh;
+  bottom: auto;
 }
 
 .nine p {
@@ -260,11 +265,11 @@ body {
   }
 
   .one {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   .three {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .four .text-box {
@@ -277,11 +282,15 @@ body {
   }
 
   .five p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .idea-3 {
+    padding: 0 10px;
   }
 
   .five .idea-5 {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     padding: 0 10px;
   }
 
@@ -290,30 +299,55 @@ body {
   }
 
   .idea-6 span {
-    font-size: 7rem;
+    font-size: 6rem;
   }
 
   .wish-hbd {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
 
   .wish h5 {
-    font-size: 1.1rem;
-    padding: 0 20px;
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .nine {
+    padding: 0 15px;
   }
 
   .nine p {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     font-weight: lighter;
+    line-height: 1.5;
   }
 }
 
 @media screen and (max-width: 350px) {
   .one {
-    font-size: 2.2rem;
+    font-size: 2rem;
+  }
+
+  .three {
+    font-size: 1.4rem;
+  }
+
+  .five p {
+    font-size: 1.1rem;
+  }
+
+  .five .idea-5 {
+    font-size: 1rem;
   }
 
   .idea-6 span {
-    font-size: 5rem;
+    font-size: 4rem;
+  }
+
+  .wish-hbd {
+    font-size: 1.2em;
+  }
+
+  .nine p {
+    font-size: 0.95rem;
   }
 }
