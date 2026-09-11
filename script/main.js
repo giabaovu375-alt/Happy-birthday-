@@ -33,6 +33,7 @@ const animationTimeline = () => {
 
   hbd.innerHTML = `<span>${hbd.innerHTML
     .split("")
+    .map(char => (char === " " ? "&nbsp;" : char))
     .join("</span><span>")}</span`;
 
   const ideaTextTrans = {
@@ -204,17 +205,6 @@ const animationTimeline = () => {
         y: -1000
       },
       0.2
-    )
-    .from(
-      ".hat",
-      0.5,
-      {
-        x: -100,
-        y: 350,
-        rotation: -180,
-        opacity: 0
-      },
-      "-=1"
     )
     .staggerFrom(
       ".wish-hbd span",
